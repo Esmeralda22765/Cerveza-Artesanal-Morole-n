@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+<title>Document</title>
+</head>
+
+<body id="fondo">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="logo"><a href="#"><img src="img/logo.jpg"></a>
+            <span class="btn-menu"><i class="fas fa-bars"></i></span>
+          </div>
+          <div class="sociales">
+            <a href="https://www.facebook.com/cerveceriamoroleon/photos/?ref=page_internal" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            
+        </div>
+        <div class="sociales">
+          <a href="https://www.instagram.com/cerveza_moroleon/" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="container-fluid">
+            
+          <button class="navbar-toggler" id="navicono" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+               
+                <a class="nav-link active" aria-current="page" href="menuInicial.html" id="nav">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="eventos.html" id="navTitulos">FESTIVALES</a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="CompraOnline.html" id="navTitulos">COMPRAR ONLINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Contactanos.html" id="navTitulos">CONTÁCTANOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Nosotros.html" id="navTitulos">NOSOTROS</a>
+              </li>
+            </ul>
+           
+          </div>
+      
+        </div>
+      </nav>
+
+      <style>
+body{
+  box-sizing: border-box;
+         
+      
+       }
+
+       #fondo{
+  
+  background-color: #B0C6D9;
+
+}
+       .sociales a {
+    display: inline-flex;
+    color: #ffffff;
+    height: 48px;
+    width: 48px;
+    left: 20px;
+    background-color: #000000;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: transform 0.4s;
+}
+
+
+.sociales a.facebook {
+    background-color: #3498BF;
+}
+
+
+.sociales a.instagram {
+    background-color:#C12B52
+}
+
+        /** Footer **/
+        .footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/footer.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+
+.footer .footer-text{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background:#472011;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+    bottom: -333px;
+}
+
+
+.footer .footer-text p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+
+:root {
+  --white: #ffffff;
+  --red: #000000;
+  --bodyColor: #43586d;
+  --borderFormEls: hsl(0, 0%, 10%);
+  --bgFormEls: #43586d;
+  --bgFormElsFocus: hsl(7, 44%, 28%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 var(--white);
+}
+
+textarea {
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 18px/1.5 "Open Sans", sans-serif;
+  background: var(--bodyColor);
+  color: var(--white);
+  margin: 1.5rem 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+.my-form h1 {
+  margin-bottom: 1.5rem;
+}
+
+.my-form li,
+.my-form .grid > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.my-form select,
+.my-form input,
+.my-form textarea,
+.my-form button {
+  width: 100%;
+  line-height: 1.5;
+  padding: 15px 10px;
+  border: 1px solid var(--borderFormEls);
+  color: var(--white);
+  background: var(--bgFormEls);
+  transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
+    transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.my-form textarea {
+  height: 170px;
+}
+
+.my-form ::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus,
+.my-form button:enabled:hover,
+.my-form button:focus,
+.my-form input[type="checkbox"]:focus + label {
+  background: var(--bgFormElsFocus);
+}
+
+.my-form select:focus,
+.my-form input:focus,
+.my-form textarea:focus {
+  transform: scale(1.02);
+}
+
+.my-form *:required,
+.my-form select {
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-size: 15px 15px;
+}
+
+.my-form *:required {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);  
+}
+
+.my-form select {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+}
+
+.my-form *:disabled {
+  cursor: default;
+  filter: blur(2px);
+}
+
+
+.my-form .required-msg {
+  display: none;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
+    no-repeat center left / 15px 15px;
+  padding-left: 20px;
+}
+
+.my-form .btn-grid {
+  position: relative;
+  overflow: hidden;
+  transition: filter 0.2s;
+}
+
+.my-form button {
+  font-weight: bold;
+}
+
+.my-form button > * {
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.my-form button .back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.my-form button:enabled:hover .back,
+.my-form button:focus .back {
+  transform: translate(-50%, -50%);
+}
+
+.my-form button:enabled:hover .front,
+.my-form button:focus .front {
+  transform: translateX(110%);
+}
+
+
+/*CHECKBOX*/
+.my-form input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.my-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.my-form input[type="checkbox"] + label::before,
+.my-form input[type="checkbox"] + label::after {
+  content: '';
+  position: absolute;
+}
+
+.my-form input[type="checkbox"] + label::before {
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--white);
+}
+
+.my-form input[type="checkbox"]:checked + label::before {
+  background: var(--red);
+}
+
+.my-form input[type="checkbox"]:checked + label::after {
+  left: 7px;
+  top: 7px;
+  width: 6px;
+  height: 14px;
+  border-bottom: 2px solid var(--white);
+  border-right: 2px solid var(--white);
+  transform: rotate(45deg);
+}
+
+
+/* FOOTER */
+footer {
+  font-size: 1rem;
+  text-align: right;
+  backface-visibility: hidden;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer span {
+  color: var(--red);
+}
+
+
+/* MQ */
+@media only screen and (min-width: 1200px) {
+  .my-form .grid {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-3 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+
+  .my-form .grid > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .my-form .required-msg {
+    display: block;
+  }
+}
+
+/*
+MOVIL 
+*/
+@media only screen and (min-width: 320px) {
+  .my-form input[type="checkbox"] + label::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .my-form input[type="checkbox"]:checked + label::after {
+    top: 3px;
+  }
+}
+      </style>
+  
+  <form class="my-form">
+    <div class="container">
+      <h1>Envianos un mensaje</h1>
+      <ul>
+        <li>
+         
+        </li>
+        <li>
+          <div class="grid grid-2">
+            <input type="text" placeholder="Nombre" required>  
+            <input type="text" placeholder="Usuario" required>
+          </div>
+        </li>
+        <li>
+          <div class="grid grid-2">
+            <input type="email" placeholder="Correo" required>  
+            <input type="tel" placeholder="Teléfono">
+          </div>
+        </li>    
+        <li>
+          <textarea placeholder="Dudas"></textarea>
+        </li>   
+        <li>
+          <input type="checkbox" id="terms">
+          <label for="terms">He leído los términos y condiciones <a href=""></a></label>
+        </li>  
+        <li>
+          <div class="grid grid-3">
+            
+            <button class="btn-grid" type="submit" disabled>
+              <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+              </span>
+              <span class="front">ENVIAR</span>
+            </button>
+            <button class="btn-grid" type="reset" disabled>
+              <span class="back">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+              </span>
+              <span class="front">REINICIAR</span>
+            </button> 
+          </div>
+        </li>    
+      </ul>
+    </div>
+  </form>
+  
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="skew-arriba"></div>
+        <div class="deg-footer"></div>
+    
+        <div class="ejeZfooter">
+          <div class="footer-content">
+            <div class="footer-title">
+             
+            
+            </div>
+          </div>
+        </div>
+        <div class="footer-text">
+            <p>&copy; Cerveza Artesanal Moroleón</p>
+          </div>
+      </footer>
+    
+      <!-- Scripts -->
+      <script src="https://kit.fontawesome.com/35db202371.js"></script>
+      <script src="js/app.js"></script>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+<!--PIE
+<footer>Datos del pie</footer>-->
+
+       <!-- Optional JavaScript -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="contactanosBoton.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>    
+
+</body>
+</html>
