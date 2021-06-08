@@ -22,7 +22,7 @@
         <div class="logo"><a href="#"><img src="img/logo.jpg"></a>
             <span class="btn-menu"><i class="fas fa-bars"></i></span>
           </div>
-          <div class="sociales">
+          <div class="sociales1">
             <a href="https://www.facebook.com/cerveceriamoroleon/photos/?ref=page_internal" class="facebook"><i class="fab fa-facebook-f"></i></a>
             
         </div>
@@ -75,20 +75,51 @@ body{
 
 }
        .sociales a {
-    display: inline-flex;
+        display: inline-flex;
     color: #ffffff;
     height: 48px;
     width: 48px;
     left: 20px;
-    background-color: #000000;
+    background-color: #c20d58;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 50%;
     margin: 0 6px;
-    transition: transform 0.4s;
-}
+  background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 530px;
+    animation-name: tama2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 
+}
+.sociales1 a{
+  display: inline-flex;
+    color: #ffffff;
+    height: 48px;
+    width: 48px;
+    left: 20px;
+    background-color: #0d80c2;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 6px;
+  background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 460px;
+    animation-name: tama2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
 
 .sociales a.facebook {
     background-color: #3498BF;
@@ -217,6 +248,9 @@ body {
   padding: 0 1.5rem;
 }
 
+.my-form{
+  margin-top: 70px;
+}
 
 .my-form h1 {
   margin-bottom: 1.5rem;
@@ -315,7 +349,6 @@ body {
   top: 50%;
   transform: translate(-110%, -50%);
 }
-
 .my-form button:enabled:hover .back,
 .my-form button:focus .back {
   transform: translate(-50%, -50%);
@@ -367,6 +400,38 @@ body {
   transform: rotate(45deg);
 }
 
+.msg{
+ 
+  color: #C12B52;
+  background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -50px;
+    margin-right: -100px;
+    text-align: center;
+    animation-name: tama3;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+       }
+
+       @keyframes tama3 {
+    50%{	
+      opacity: 0;
+      transform: translate(30px, -10px)
+      }
+    50%{
+    opacity: 0;
+    transform: translate(800px, 0px)
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+     opacity: 0;
+     
+    }
+ }
 
 /* FOOTER */
 footer {
@@ -426,7 +491,7 @@ MOVIL
   
   <form class="my-form">
     <div class="container">
-      <h1>Envianos un mensaje</h1>
+      <h1 class="msg">Envianos un mensaje</h1>
       <ul>
         <li>
          

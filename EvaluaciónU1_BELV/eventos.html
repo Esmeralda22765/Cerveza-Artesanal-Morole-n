@@ -34,8 +34,13 @@
       
       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="logo"><a href="#"><img src="img/logo.jpg"></a>
+          
             <span class="btn-menu"><i class="fas fa-bars"></i></span>
+            <div class="well">
+              <div class="progress-bar">Cargando eventos</div>
+            </div>
           </div>
+          
         <div class="container-fluid">
             
           <button class="navbar-toggler" id="navicono" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -161,11 +166,42 @@
         
   }
 
-
 }
-</style>
 
+</style>
+<style>
+  .well {
+    width: 100%;
+    background-color: #F7F7F7;
+    background-image: linear-gradient(to bottom, #F5F5F5, #F9F9F9);
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    overflow: hidden;
+  }
+ 
+  .progress-bar {
+    animation: progress 6s;
+    padding: .3em;
+    text-align: left;
+    color: rgba(255,255,255,100);
+    background-image: linear-gradient(135deg, #811624, #0e0c0c, #811624);
+    border-radius: 4px 4px 4px 4px;
+  }
+  
+  @keyframes progress {
+    from {
+      width: 0;
+      color: rgba(255,255,255,0);
+    }
+    to {
+      width: 100%;
+      color: rgba(255,255,255,1);
+    }
+  }
+        </style>
       <div class="eventos">
+    
         <div class="item">
           <img src="img/event1.jpg" alt="" class="item-img">
           <div class="item-text">
