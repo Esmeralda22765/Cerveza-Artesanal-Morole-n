@@ -25,6 +25,7 @@ body{
     color: white;
 }
 #nav{
+   
     color: white;
 }
 .container-fluid{
@@ -35,23 +36,38 @@ body{
     color:rgb(253, 253, 253);
     background: rgb(255, 251, 251);
 }
-.img-header{
-    position: relative;
-    background:url(../img/33.jpg) no-repeat rgba(167, 122, 81, 0.425);
-    background-position: center;
-    background-size: cover;
-   
-    
-}
-
 .logo img{
     position: flex;
     width: 20%;
     height: 10vh;
     border-radius: 90%;
-   left: 700px;
-  
+    left: 700px;
 }
+
+ .navbar{
+    position: fixed;
+    -webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+#navbar.scrolled
+{
+	height: 70px;
+}
+.imgRedu img{
+	height: 12vh !important;
+}
+
+.img-header{
+    position: relative;
+    background:url(../img/33.jpg) no-repeat rgba(167, 122, 81, 0.425);
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 #carusel{
     width:100%;
@@ -110,6 +126,7 @@ border-radius: 100%;
     
 }
 
+
 .footer .ejeZfooter{
     position: relative;
     width: 100%;
@@ -142,3 +159,46 @@ border-radius: 100%;
     text-align: center;
     color: #fff;
 }
+
+/* movil
+*/
+@media only screen and (min-width: 320px) {
+  
+    .inicio_titulo{
+      grid-template-columns: repeat(1, 1fr);
+      flex-direction: row;
+          justify-content:flex-end;
+    }
+    .inicio_titulo{
+        width:97%;
+        height: 95%;
+            
+            flex: 1 1 50%;
+      }
+  }
+  
+  /*
+REDES SOCIALES
+  */
+
+@keyframes tama2 {
+    65%{	
+        transform:rotate(360deg) 
+      }
+    40%{
+    opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+     opacity: 0;
+     transform:rotate(-360deg)     
+    }
+ }
+
+
+  
+  
+    
+   
